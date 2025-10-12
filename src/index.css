@@ -1,0 +1,89 @@
+@import url('https://fonts.cdnfonts.com/css/dodger');
+@import url(https://db.onlinewebfonts.com/c/3889a81d538246d1cdb7bf2bd997fa72?family=Korataki+W01+Regular); 
+
+@import "tailwindcss";
+
+/* ================================
+   ⚡ THEME ESCUDERÍA FÉNIX
+   ================================ */
+@theme {
+  /* Colores de marca */
+  --color-fenix-red: #e50914;
+  --color-fenix-orange: #ff6b00;
+  --color-fenix-black: #0a0a0a;
+  --color-fenix-gray: #1c1c1c;
+  --color-fenix-white: #ffffff;
+
+  /* Tokens base */
+  --color-bg-default: var(--color-fenix-black);
+  --color-bg-alt: var(--color-fenix-gray);
+  --color-text-default: var(--color-fenix-white);
+  --color-accent: var(--color-fenix-orange);
+  --color-accent-strong: var(--color-fenix-red);
+
+  /* Tipografía principal */
+  --font-dodger: "Dodger", sans-serif;
+  --font-korataki: "Korataki", sans-serif;
+
+  /* Otros */
+  --radius-base: 0.75rem;
+  --shadow-glow: 0 0 12px var(--color-fenix-orange);
+}
+
+/* ================================
+   ⚙️ ESTILOS GLOBALES
+   ================================ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-default);
+  color: var(--color-text-default);
+  font-family: var(--font-korataki);
+  scroll-behavior: smooth;
+  min-height: 100%;
+  letter-spacing: 0.02em;
+}
+
+/* Suavizado general */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Headings */
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-family: var(--font-dodger);
+  letter-spacing: 0.05em;
+}
+
+/* Selección */
+::selection {
+  background: var(--color-accent);
+  color: var(--color-fenix-black);
+}
+
+.nav-link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, var(--color-fenix-orange), var(--color-fenix-red));
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}

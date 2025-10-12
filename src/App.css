@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* ================================
+   🔥 COMPONENTES VISUALES FÉNIX
+   ================================ */
+
+/* Botón principal */
+.btn-fenix {
+  @apply inline-block px-6 py-3 font-bold rounded-[var(--radius-base)] uppercase tracking-widest;
+  background: var(--color-accent);
+  color: var(--color-fenix-black);
+  box-shadow: var(--shadow-glow);
+}
+.btn-fenix:hover {
+  background: var(--color-fenix-white);
+  color: var(--color-fenix-red);
+}
+
+/* Separador de secciones */
+.section-divider {
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-accent),
+    transparent
+  );
+  margin: 4rem 0;
+}
+
+/* Fondo con brillo radial */
+.bg-fenix-glow {
+  background: radial-gradient(
+    circle at center,
+    var(--color-fenix-orange) 0%,
+    transparent 70%
+  );
+}
+
+/* Efecto Motion suave */
+.motion-fade {
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Animación sutil de pulsación (útil para el Hero o botones) */
+.pulse-fenix {
+  animation: pulse 2s infinite ease-in-out;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0px var(--color-accent); }
+  50% { box-shadow: 0 0 20px var(--color-accent); }
+}
+
+/* Tarjeta de información (para equipo o sponsors) */
+.card-fenix {
+  @apply p-6 rounded-[var(--radius-base)] border border-[var(--color-accent)] text-center;
+  background: var(--color-bg-alt);
+}
+.card-fenix:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-glow);
+}
