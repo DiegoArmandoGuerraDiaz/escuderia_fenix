@@ -66,7 +66,7 @@ export default function Car() {
 
       {/* 🧊 Panel desktop */}
       <motion.div
-        className="hidden md:block absolute right-[8%] md:right-[5%] lg:right-[6%] w-[85%] md:w-[60%] lg:w-[35%] backdrop-blur-xl 
+        className="hidden md:block mt-15 absolute right-[8%] md:right-[5%] lg:right-[6%] w-[85%] md:w-[60%] lg:w-[35%] backdrop-blur-xl 
         bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.1)] 
         p-8 md:p-10 shadow-[0_0_40px_var(--color-fenix-orange)]/30 text-left space-y-6"
         initial={{ opacity: 0, x: 100 }}
@@ -78,7 +78,7 @@ export default function Car() {
           Fénix FX-01
         </h2>
 
-        <p className="text-gray-300 leading-relaxed text-lg">
+        <p className="text-gray-300 leading-relaxed text-md">
           Nuestro monoplaza eléctrico de alto rendimiento combina potencia,
           eficiencia y precisión. Diseñado para competir, representa la ingeniería y la pasión
           de la Escudería Fénix.

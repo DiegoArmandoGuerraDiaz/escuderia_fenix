@@ -14,15 +14,7 @@ export default function Competition() {
       id="competition"
       className="relative h-screen flex flex-col items-center justify-center text-center overflow-hidden"
     >
-      {/* 🏁 Imagen de fondo */}
-      <motion.img
-        src="/electraton-bg.jpg"
-        alt="Competencia Electratón"
-        className="absolute inset-0 w-full h-full object-cover object-center"
-        initial={{ opacity: 0, scale: 1.1 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-      />
+    
 
       {/* 🌒 Capas sutiles */}
       <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.25)] via-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.6)]" />
@@ -50,18 +42,18 @@ export default function Competition() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="relative z-10 max-w-4xl px-4 sm:px-6 flex flex-col items-center text-white"
+        className="relative z-10 max-w-4xl mt-15 px-4 sm:px-6 flex flex-col items-center text-white"
       >
 
-        <h2 className="text-[8vw] m-5 sm:text-5xl font-extrabold text-[var(--color-fenix-orange)] mb-3 drop-shadow-[0_0_15px_var(--color-fenix-orange)] leading-tight">
-          La Competencia
+        <h2 className="text-[6vw] sm:text-3xl md:text-4xl font-extrabold text-[var(--color-fenix-orange)] drop-shadow-[0_0_15px_var(--color-fenix-orange)] leading-tight">
+          La Competencia:
         </h2>
 
         <motion.h3
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
-          className="text-[9vw]  sm:text-6xl md:text-7xl font-bold text-[var(--color-fenix-red)] mb-6 uppercase tracking-widest drop-shadow-[0_0_25px_var(--color-fenix-red)] leading-tight"
+          className="text-[7vw]  sm:text-5xl md:text-6xl font-bold text-[var(--color-fenix-red)] uppercase tracking-widest drop-shadow-[0_0_25px_var(--color-fenix-red)] leading-tight"
         >
           Electratón
         </motion.h3>
@@ -70,13 +62,13 @@ export default function Competition() {
         <motion.img
           src="/public/LogoElectraton.webp" // 🔁 cambia la ruta según tu carpeta real
           alt="Logo Electratón"
-          className="w-[40vw] sm:w-[25vw] md:w-[18vw] drop-shadow-[0_0_15px_var(--color-fenix-red)]"
+          className="w-[50vw] sm:w-[25vw] md:w-[35vw] p-8  drop-shadow-[0_0_15px_var(--color-fenix-red)]"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         />
 
-        <p className="text-gray-100 text-[3vw] m-6 sm:text-lg md:text-xl leading-relaxed sm:leading-relaxed max-w-3xl drop-shadow-[0_0_8px_rgba(0,0,0,0.4)]">
+        <p className="text-gray-100 text-sm md:text-lg lg:text-[1vw] md:px-10 leading-relaxed sm:leading-relaxed max-w-3xl drop-shadow-[0_0_8px_rgba(0,0,0,0.4)]">
           Es el campeonato nacional de autos eléctricos
           organizado por <strong>Incubadora de Tecnología A.C.</strong>, donde universidades y empresas
           impulsan el desarrollo de la movilidad sustentable en México.  

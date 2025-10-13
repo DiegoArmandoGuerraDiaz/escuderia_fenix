@@ -184,7 +184,7 @@ export default function Locations() {
             <h2 className="text-[2vw]  font-extrabold text-[var(--color-fenix-orange)] mb-4">
               Sedes de Competencia
             </h2>
-            <h3 className="text-[4.3vw] leading-[4.3vw] font-bold text-[var(--color-fenix-red)] uppercase tracking-widest drop-shadow-[0_0_25px_var(--color-fenix-red)]">
+            <h3 className="text-[4.1vw] md:text-[3.8vw] leading-[4.1vw] font-bold text-[var(--color-fenix-red)] uppercase tracking-widest drop-shadow-[0_0_25px_var(--color-fenix-red)]">
               Electratón México
             </h3>
           </div>

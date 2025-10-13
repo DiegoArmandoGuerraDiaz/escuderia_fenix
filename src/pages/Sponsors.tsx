@@ -25,7 +25,7 @@ export default function Sponsors() {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="font-extrabold text-[6vw] md:text-5xl text-[var(--color-fenix-orange)] mb-12 md:mb-20 mt-12"
+        className="font-extrabold text-[6vw] md:text-5xl text-[var(--color-fenix-orange)] drop-shadow-[0_0_15px_var(--color-fenix-orange)] mb-12 md:mb-20 mt-12"
       >
         Nuestros Patrocinadores
       </motion.h2>

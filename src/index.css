@@ -1,11 +1,14 @@
 @import url('https://fonts.cdnfonts.com/css/dodger');
-@import url(https://db.onlinewebfonts.com/c/3889a81d538246d1cdb7bf2bd997fa72?family=Korataki+W01+Regular); 
-
 @import "tailwindcss";
 
 /* ================================
    ⚡ THEME ESCUDERÍA FÉNIX
    ================================ */
+@font-face {
+  font-family: 'Korataki';
+  src: url(/public/fonts/Korataki.ttf) format('truetype');
+}
+
 @theme {
   /* Colores de marca */
   --color-fenix-red: #e50914;
@@ -29,6 +32,7 @@
   --radius-base: 0.75rem;
   --shadow-glow: 0 0 12px var(--color-fenix-orange);
 }
+
 
 /* ================================
    ⚙️ ESTILOS GLOBALES

@@ -35,12 +35,12 @@ export default function Contact() {
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="relative z-10 w-full md:w-1/2 max-w-lg"
+      className="relative flex flex-col items-center z-10 w-full md:w-1/2 max-w-lg"
     >
-      <h2 className="text-[8vw] md:text-5xl font-extrabold text-[var(--color-accent)] mb-6 md:mb-8  text-center">
+      <h2 className="text-[7vw] mt-4 md:text-5xl md:ml-50 font-extrabold text-[var(--color-accent)] drop-shadow-[0_0_15px_var(--color-fenix-orange)] mb-6 md:mb-8  text-center">
         Contáctanos
       </h2>
-      <p className="text-gray-300 mb-8 md:mb-12 text-base sm:text-lg text-center md:text-left">
+      <p className="text-gray-300 mb-8 md:mb-12 text-base sm:text-md text-center md:text-left">
         ¿Quieres colaborar, patrocinar o conocer más sobre la Escudería Fénix?
         Escríbenos y con gusto nos pondremos en contacto.
       </p>
@@ -88,7 +88,7 @@ export default function Contact() {
       transition={{ duration: 0.8 }}
       className="relative z-10 w-full md:w-1/3 max-w-sm flex flex-col items-center md:items-start gap-6"
     >
-      <h3 className="text-3xl font-bold text-[var(--color-fenix-orange)] mb-4">
+      <h3 className="text-3xl font-bold text-[var(--color-fenix-orange)] mt-10">
         Síguenos en redes
       </h3>
       <div className="flex flex-col gap-4 w-full">

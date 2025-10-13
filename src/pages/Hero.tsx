@@ -16,7 +16,7 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="w-lg h-lg mb-8 drop-shadow-[0_0_30px_var(--color-fenix-orange)]"
+        className="w-lg fit-cover mt-20 drop-shadow-[0_0_30px_var(--color-fenix-orange)]"
       />
 
       {/* 🔥 Título animado */}
@@ -24,7 +24,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="flex flex-col justify-center items-center font-extrabold text-[var(--color-fenix-white)] drop-shadow-[0_0_15px_var(--color-fenix-orange)] gap-4"
+        className="flex flex-col justify-center items-center font-extrabold text-[var(--color-fenix-white)] drop-shadow-[0_0_15px_var(--color-fenix-orange)] "
       >
         <span className="font-[Dodger] tracking-widest text-4xl md:text-6xl">Escudería</span>
         <span className="font-[Korataki] tracking-widest text-6xl md:text-8xl text-[var(--color-fenix-orange)]">
