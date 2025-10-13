@@ -3,9 +3,10 @@ import { motion } from "motion/react";
 interface SponsorRibbonProps {
   reverse?: boolean;
   className?: string;
+  logos?: string[]; // opcional, si se quiere pasar un conjunto específico
 }
 
-export default function SponsorRibbon({ reverse = false, className = "" }: SponsorRibbonProps) {
+export default function SponsorRibbon({ reverse = false, className = "",  }: SponsorRibbonProps) {
   // ✅ Carga automática desde /public/sponsorsElectraton/
   const images = Object.values(
     import.meta.glob("/public/sponsorsElectraton/Logo*.webp", {
@@ -17,7 +18,7 @@ export default function SponsorRibbon({ reverse = false, className = "" }: Spons
 
   // 🎲 Aleatoriza orden
   const shuffled = [...images].sort(() => Math.random() - 0.5);
-  const logos = [...shuffled, ...shuffled]; // duplicado para loop infinito
+  const finalLogos = [...shuffled, ...shuffled]; // duplicado para loop infinito
 
   return (
     <div
@@ -34,7 +35,7 @@ export default function SponsorRibbon({ reverse = false, className = "" }: Spons
           ease: "linear",
         }}
       >
-        {logos.map((src, i) => (
+        {finalLogos.map((src, i) => (
           <img
             key={i}
             src={src}

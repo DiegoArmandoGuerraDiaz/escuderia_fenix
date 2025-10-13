@@ -4,9 +4,9 @@ import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
-  const handleDropdown = (menu) => {
+  const handleDropdown = (menu: string) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
   };
 

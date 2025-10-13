@@ -6,26 +6,26 @@ const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
 // 🧭 Lista de sedes
 const locations = [
-  { name: "Toluca", coordinates: [-99.3860, 19.2864], showName: false },
-  { name: "Cuautla", coordinates: [-98.9548, 18.8121], showName: false },
-  { name: "CDMX", coordinates: [-99.1332, 19.4326] },
-  { name: "León", coordinates: [-101.684, 21.122], showName: true },
-  { name: "Guadalajara", coordinates: [-103.344, 20.6736], showName: true },
-  { name: "Monterrey", coordinates: [-100.3161, 25.6866], showName: true },
+  { name: "Toluca", coordinates: [-99.3860, 19.2864] as [number, number], showName: false },
+  { name: "Cuautla", coordinates: [-98.9548, 18.8121] as [number, number], showName: false },
+  { name: "CDMX", coordinates: [-99.1332, 19.4326] as [number, number] },
+  { name: "León", coordinates: [-101.684, 21.122] as [number, number], showName: true },
+  { name: "Guadalajara", coordinates: [-103.344, 20.6736] as [number, number], showName: true },
+  { name: "Monterrey", coordinates: [-100.3161, 25.6866] as [number, number], showName: true },
 ];
 
 // 📍 Sedes para el mini-mapa (zona centro)
 const centralLocations = [
-  { name: "Toluca", coordinates: [-99.3860, 19.2864] },
-  { name: "Cuautla", coordinates: [-98.9548, 18.8121] },
-  { name: "CDMX", coordinates: [-99.1332, 19.4326] },
+  { name: "Toluca", coordinates: [-99.3860, 19.2864] as [number, number] },
+  { name: "Cuautla", coordinates: [-98.9548, 18.8121] as [number, number] },
+  { name: "CDMX", coordinates: [-99.1332, 19.4326] as [number, number] },
 ];
 
 export default function Locations() {
   const [showModal, setShowModal] = useState(false);
 
   // Función que abre el modal solo en móvil
-  const handleMarkerClick = (name) => {
+  const handleMarkerClick = (name: string) => {
     if (window.innerWidth < 768 && ["Toluca", "Cuautla", "CDMX"].includes(name)) {
       setShowModal(true);
     }
@@ -126,11 +126,10 @@ export default function Locations() {
                 center: [-99.2, 19.2],
               }}
               style={{ width: "100%", height: "100%" }}
-              geography="https://raw.githubusercontent.com/strotgen/mexico-leaflet/master/states.geojson"
             >
               <Geographies geography="https://raw.githubusercontent.com/strotgen/mexico-leaflet/master/states.geojson">
-                {({ geographies }) =>
-                  geographies.map((geo) => (
+                {({ geographies }: any) =>
+                  geographies.map((geo: any) => (
                     <Geography
                       key={geo.rsmKey}
                       geography={geo}
@@ -224,11 +223,10 @@ export default function Locations() {
                   center: [-99.2, 19.2],
                 }}
                 style={{ width: "100%", height: "100%" }}
-                geography="https://raw.githubusercontent.com/strotgen/mexico-leaflet/master/states.geojson"
               >
                 <Geographies geography="https://raw.githubusercontent.com/strotgen/mexico-leaflet/master/states.geojson">
-                  {({ geographies }) =>
-                    geographies.map((geo) => (
+                  {({ geographies }: any) =>
+                    geographies.map((geo: any) => (
                       <Geography
                         key={geo.rsmKey}
                         geography={geo}
