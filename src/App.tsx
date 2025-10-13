@@ -5,6 +5,7 @@ import Car from "./pages/Car";
 import Sponsors from "./pages/Sponsors";
 import Team from "./pages/Team";
 import Competition from "./pages/Competition";
+import Locations from "./pages/Locations";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 
@@ -16,10 +17,11 @@ export default function App() {
         <section className="snap-start"><Hero /></section>
         <section className="snap-start"><About /></section>
         <section className="snap-start"><Car /></section>
-        <section className="snap-start"><Sponsors /></section>
         <section className="snap-start"><Team /></section>
+        <section className="snap-start"><Sponsors /></section>
         <section className="snap-start"><Competition /></section>
-        <section className="snap-start"><Contact /></section>
+        <section className="snap-start"><Locations /></section>
+        <Contact />
         <section className="snap-start"><Footer /></section>
       </div>
     </main>
