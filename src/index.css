@@ -8,6 +8,37 @@
   font-family: 'Korataki';
   src: url(/public/fonts/Korataki.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'Dodger';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dodger'), url(/public/fonts/Dodgv2.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Dodger Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dodger Condensed'), url(/public/fonts/Dodgv2c.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Dodger Shadow';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dodger Shadow'), url(/public/fonts/Dodgv2s.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Dodger Condensed Italic';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Dodger Condensed Italic'), url(/public/fonts/Dodgv2ci.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Dodger Italic';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Dodger Italic'), url(/public/fonts/Dodgv2i.ttf) format('truetype');
+}
+
 
 @theme {
   /* Colores de marca */

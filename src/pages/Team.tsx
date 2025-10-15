@@ -2,10 +2,10 @@ import { motion } from "motion/react";
 
 export default function Team() {
   const members = [
-    { name: "Mike Tyson", role: "Capitán" },
-    { name: "Hasbullah Rodríguez", role: "Diseño Mecánico" },
-    { name: "Dinosaurio Anacleto", role: "Electrónica y Control" },
-    { name: "Juan", role: " " },
+    { name: "Nombre Apellido", role: "Capitán" },
+    { name: "Nombre Apellido", role: "Diseño Mecánico" },
+    { name: "Nombre Apellido", role: "Electrónica y Control" },
+    { name: "Nombre Apellido", role: "Sistemas de Confort" },
   ];
 
   return (

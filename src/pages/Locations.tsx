@@ -191,7 +191,7 @@ export default function Locations() {
           <p className="text-gray-300 text-sm md:text-lg leading-relaxed max-w-lg">
             Competimos en <strong>6 sedes nacionales</strong> del campeonato <strong>Electratón México</strong>:  
             <br />
-            Toluca, La Marquesa, Cuautla (Morelos), León (Gto), Guadalajara y Monterrey.  
+            La Marquesa, Cuautla (Morelos), León (Gto), Guadalajara, Monterrey y CDMX.  
           </p>
 
           <div className="w-28 h-[3px] bg-gradient-to-r from-[var(--color-fenix-orange)] to-[var(--color-fenix-red)] rounded-full mt-8"></div>

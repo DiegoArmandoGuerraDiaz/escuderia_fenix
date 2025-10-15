@@ -23,7 +23,7 @@ export default function Navbar() {
           <img
             src="/LogoColor.svg"
             alt="Escudería Fénix"
-            className="w-14 h-14 drop-shadow-[0_0_10px_var(--color-fenix-orange)]"
+            className="w-14 drop-shadow-[0_0_10px_var(--color-fenix-orange)]"
           />
           <div className="flex flex-col leading-none gap-0">
             <span className="font-[Dodger] tracking-widest uppercase text-gray-200">
@@ -83,7 +83,7 @@ export default function Navbar() {
                       href="#team"
                       className="nav-link block px-4 py-2 hover:bg-[rgba(255,255,255,0.1)]"
                     >
-                      Conoce el equipo
+                      Conoce al equipo
                     </a>
                   </li>
                 </motion.ul>
@@ -138,11 +138,6 @@ export default function Navbar() {
 
           {/* Sponsors y Contacto */}
           
-          <li>
-            <a href="#contact" className="nav-link hover:text-[var(--color-fenix-orange)] transition-colors">
-              Contacto
-            </a>
-          </li>
         </ul>
 
         {/* 🎯 Botón principal */}
@@ -152,7 +147,7 @@ export default function Navbar() {
           whileTap={{ scale: 0.95 }}
           className="hidden lg:inline-block px-5 py-2 rounded-lg font-semibold text-black bg-[var(--color-fenix-orange)] hover:bg-[var(--color-fenix-red)] shadow-[0_0_10px_var(--color-fenix-orange)] transition-colors"
         >
-          Síguenos
+          Contáctanos
         </motion.a>
 
         {/* 📱 Botón menú móvil */}
@@ -177,12 +172,11 @@ export default function Navbar() {
             <ul className="flex flex-col items-center gap-4 py-6 font-medium text-gray-200 text-lg">
               <a href="#hero" onClick={() => setMenuOpen(false)}>Inicio</a>
               <a href="#about" onClick={() => setMenuOpen(false)}>Nosotros</a>
-              <a href="#team" onClick={() => setMenuOpen(false)}>Equipo</a>
-              <a href="#car" onClick={() => setMenuOpen(false)}>Auto</a>
+              <a href="#car" onClick={() => setMenuOpen(false)}>Nuestro Auto</a>
+              <a href="#team" onClick={() => setMenuOpen(false)}>Conoce al equipo</a>
+              <a href="#sponsors" onClick={() => setMenuOpen(false)}>Sponsors</a>
               <a href="#competition" onClick={() => setMenuOpen(false)}>Electratón</a>
               <a href="#locations" onClick={() => setMenuOpen(false)}>Sedes</a>
-              <a href="#sponsors" onClick={() => setMenuOpen(false)}>Sponsors</a>
-              <a href="#contact" onClick={() => setMenuOpen(false)}>Contacto</a>
               <motion.a
                 href="#contact"
                 whileHover={{ scale: 1.05 }}
@@ -190,7 +184,7 @@ export default function Navbar() {
                 className="mt-4 px-6 py-2 rounded-lg font-semibold text-black bg-[var(--color-fenix-orange)] hover:bg-[var(--color-fenix-red)] shadow-[0_0_10px_var(--color-fenix-orange)] transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
-                Síguenos
+                Contáctanos
               </motion.a>
             </ul>
           </motion.div>

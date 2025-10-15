@@ -5,7 +5,7 @@ export default function Sponsors() {
     { name: "EnergyEV", logo: "/sponsors/energyEV.svg" },
     { name: "Roshfrans", logo: "/sponsors/roshfrans.png" },
     { name: "SolidWORKS", logo: "/sponsors/solidworks.svg" },
-    { name: "Autodesk", logo: "/sponsors/autodesk.svg" },
+    { name: "Tu marca aquí", logo: "Tu logo aquí" },
   ];
 
   return (

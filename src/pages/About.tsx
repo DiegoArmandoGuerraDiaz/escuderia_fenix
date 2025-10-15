@@ -8,8 +8,8 @@ export default function About() {
     >
       {/* 🖼️ Imagen de fondo */}
       <motion.img
-        src="/about.jpg"
-        alt="Escudería Fénix equipo y vehículo"
+        src="/about.webp"
+        alt="Imagen de esmerilado del equipo trabajando en el auto"
         className="absolute inset-0 w-full h-full object-cover object-center"
         initial={{ opacity: 0, scale: 1.1 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -45,7 +45,7 @@ export default function About() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
-          className="text-[5vw] sm:text-2xl md:text-3xl font-semibold text-[var(--color-fenix-orange)] mt-6 drop-shadow-[0_0_30px_var(--color-black)] leading-tight max-w-3xl"
+          className="text-[5vw] sm:text-2xl md:text-3xl font-semibold text-[var(--color-fenix-orange)] mt-6 drop-shadow-[0_0_15px_var(--color-black)] leading-tight max-w-3xl"
         >
           Demostrar que el talento estudiantil puede alcanzar la excelencia.
         </motion.p>

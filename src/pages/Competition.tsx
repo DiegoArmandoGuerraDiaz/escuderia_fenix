@@ -2,11 +2,12 @@ import { motion } from "motion/react";
 import SponsorRibbon from "../pages/SponsorRibbon";
 
 export default function Competition() {
-  const logos = [
-    "/sponsors/bosch.svg",
-    "/sponsors/continental.svg",
-    "/sponsors/siemens.svg",
-    "/sponsors/autodesk.svg",
+  interface Logo {
+    src: string;
+    alt: string;
+  }
+
+  const logos: Logo[] = [
   ];
 
   return (

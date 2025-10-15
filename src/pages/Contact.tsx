@@ -8,25 +8,25 @@ export default function Contact() {
       name: "Instagram",
       icon: <FiInstagram size={22} />,
       color: "#E4405F",
-      href: "https://www.instagram.com/escuderiafenix/",
+      href: "https://www.instagram.com/escuderiafenix_upiita/",
     },
     {
       name: "TikTok",
       icon: <FaTiktok size={22} />,
       color: "#010101",
-      href: "https://www.tiktok.com/@escuderiafenix",
+      href: "https://www.tiktok.com/@escuderiafenix_upiita",
     },
     {
       name: "YouTube",
       icon: <FiYoutube size={22} />,
       color: "#FF0000",
-      href: "https://www.youtube.com/@escuderiafenix",
+      href: "https://www.youtube.com/@escuderiafenix_upiita",
     },
     {
       name: "Facebook",
       icon: <FiFacebook size={22} />,
       color: "#1877F2",
-      href: "https://www.facebook.com/escuderiafenix",
+      href: "https://www.facebook.com/escuderiafenix_upiita",
     },
   ];
 
@@ -40,7 +40,7 @@ export default function Contact() {
       <h2 className="text-[7vw] mt-4 md:text-5xl md:ml-50 font-extrabold text-[var(--color-accent)] drop-shadow-[0_0_15px_var(--color-fenix-orange)] mb-6 md:mb-8  text-center">
         Contáctanos
       </h2>
-      <p className="text-gray-300 mb-8 md:mb-12 text-base sm:text-md text-center md:text-left">
+      <p className="text-gray-300 mb-4 md:mb-6 text-base sm:text-md text-center md:text-left">
         ¿Quieres colaborar, patrocinar o conocer más sobre la Escudería Fénix?
         Escríbenos y con gusto nos pondremos en contacto.
       </p>
@@ -73,7 +73,7 @@ export default function Contact() {
           type="submit"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="btn-fenix w-full"
+          className="btn-fenix w-full px-6 py-2 rounded-lg font-semibold text-black bg-[var(--color-fenix-orange)] hover:bg-[var(--color-fenix-red)] shadow-[0_0_10px_var(--color-fenix-orange)] transition-colors"
         >
           Enviar mensaje
         </motion.button>

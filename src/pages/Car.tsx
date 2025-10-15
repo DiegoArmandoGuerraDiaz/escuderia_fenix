@@ -109,7 +109,7 @@ export default function Car() {
               <span className="text-[var(--color-fenix-orange)] font-semibold">
                 Chasis:
               </span>{" "}
-              Tubular de acero SAE 1020
+              Tubular de acero
             </span>
           </li>
           <li className="flex items-center gap-3">
@@ -180,7 +180,7 @@ export default function Car() {
                 </li>
                 <li className="flex items-center gap-2">
                   <FiTool className="text-[var(--color-fenix-orange)]" />
-                  <span>Tubular SAE 1020</span>
+                  <span>Tubular de acero</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <FiZap className="text-[var(--color-fenix-orange)]" />
