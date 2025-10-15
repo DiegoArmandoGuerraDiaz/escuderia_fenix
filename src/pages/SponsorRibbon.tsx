@@ -3,8 +3,9 @@ import { motion } from "motion/react";
 interface SponsorRibbonProps {
   reverse?: boolean;
   className?: string;
-  logos?: string[]; // opcional, si se quiere pasar un conjunto específico
+  logos?: { src: string; alt?: string }[]; // opcional, si se quiere pasar un conjunto específico
 }
+  
 
 export default function SponsorRibbon({ reverse = false, className = "",  }: SponsorRibbonProps) {
   // ✅ Carga automática desde /public/sponsorsElectraton/

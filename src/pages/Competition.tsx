@@ -7,6 +7,8 @@ export default function Competition() {
     alt: string;
   }
 
+
+
   const logos: Logo[] = [
   ];
 
